@@ -1,6 +1,7 @@
 <html>
     <head>
         <title>Spigola's Portfolio</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="style.css">
         <link
         rel="stylesheet"
@@ -10,6 +11,17 @@
         referrerpolicy="no-referrer"
     />
     </head>
+
+    <script>
+        function showInfo() {
+          document.getElementById('hover-info').style.display = 'block';
+        }
+      
+        function hideInfo() {
+          document.getElementById('hover-info').style.display = 'none';
+        }
+      </script>
+
     <body>
         <nav>
             <a href="#home"><div class = "icons" >
@@ -19,17 +31,18 @@
                     <li><a href="https://discord.com/users/601062629787566087"><i class="fa-brands fa-discord"></a></i></li>
                     <li><a href="https://www.x.com/sp1gola"><i class="fa-brands fa-x-twitter"></a></i></li>
                     <li><a href="https://www.github.com/Sp1gola"><i class="fa-brands fa-github"></a></i></li>
-                  </ul>
-            </div>
+                </ul>
             </a>
         </nav>
         <div id="home">
             <h1>Hello, i'm Matteo</h1>
-            <p>I am an italian computer science student, with a great passion 
-                for sports, animals, music and TV series.
+            <p>
+                I'm an italian computer science student, with a great passion for 
+                <span class="transformation" onmouseenter="showInfo()" onmouseleave="hideInfo()">sport</span>,
+                <span class="transformation" onmouseenter="showInfo()" onmouseleave="hideInfo()">videogames</span>, 
+                <span class="transformation" onmouseenter="showInfo()" onmouseleave="hideInfo()">music</span>and 
+                <span class="transformation" onmouseenter="showInfo()" onmouseleave="hideInfo()">tv series</span>, 
             </p>
         </div>
-    
-        
     </body>
 </html>

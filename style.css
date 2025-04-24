@@ -46,4 +46,21 @@ ul {
 
 ul>li>a {
     color: #d3e1f6;
+    transition: border 0.2s ease;
+}
+ul>li>a:hover {
+    border: 2px solid #d3e1f6;
+    border-radius: 3px;
+}
+
+.transformation {
+    transition: border 0.3s ease, background-color 0.3s ease;
+    padding: 2px 6px;
+}
+
+.transformation:hover {
+    border: 1px solid #d3e1f6;
+    border-radius: 4px;
+    background-color: #d3e1f6;
+    color: #6868e6;
 }
